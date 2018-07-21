@@ -274,7 +274,7 @@
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                     
+                      <h1><%= session[:employee]['email']%></h1>
                     </div>
                 </div>
             </div>
@@ -300,11 +300,11 @@
                   <%= javascript_include_tag 'bootstrap/plugins' %>
                   <%= javascript_include_tag 'bootstrap/main' %>
                   <%= javascript_include_tag 'bootstrap/jquery-ui.min' %>
-                    <%= javascript_include_tag 'bootstrap/popper.min' %>
-                    <%= javascript_include_tag 'bootstrap/plugins' %>
-                    <%= javascript_include_tag 'bootstrap/main' %>
-                     <%= javascript_include_tag 'bootstrap/moment.min' %>
-                    <%= javascript_include_tag 'bootstrap/fullcalendar' %>
+                  <%= javascript_include_tag 'bootstrap/popper.min' %>
+                  <%= javascript_include_tag 'bootstrap/plugins' %>
+                  <%= javascript_include_tag 'bootstrap/main' %>
+                   <%= javascript_include_tag 'bootstrap/moment.min' %>
+                  <%= javascript_include_tag 'bootstrap/fullcalendar' %>
 
                   <%= yield %>
                   </div>
