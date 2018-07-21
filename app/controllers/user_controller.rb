@@ -11,19 +11,12 @@ class UserController < ApplicationController
       rescue
         redirect_to '/login' and return
       end
-      
+
 			if output['access_token']
         url = "#{api_link}/employee"
         session[:token] = output['access_token']
-=begin
-				user_credentials = {Authorization: session[:token]}
+			  session[:employee]  = output['user']
 
-				output = RestClient::Request.execute( { :method => :post, :url => url,
-        :payload => {:email => params[:username]}, 
-        :headers => {:Authorization => session[:token]} } )
-
-			  session[:employee]  = JSON.parse(output)
-=end
         redirect_to '/' and return
       end
     end
