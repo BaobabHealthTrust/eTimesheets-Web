@@ -3,6 +3,8 @@
 *.swp
 *.swo
 *.log
+*.pid
+.pid*
 config/email.yml
 config/application.yml
 config/settings.yml
