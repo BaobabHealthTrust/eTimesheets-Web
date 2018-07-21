@@ -3,19 +3,19 @@ class UserController < ApplicationController
   def login
 
     if request.post?
-			url = "#{office_api_location}/login"
-      user_credentials = {email: params[:username], password: params[:pass]}
-
+			url = "#{api_link}/login"
+      user_credentials = {email: params[:email], password: params[:password]}
+      
       begin
 			  output = JSON.parse(RestClient.post url, user_credentials)
       rescue
         redirect_to '/login' and return
       end
-
+      
 			if output['access_token']
-        url = "#{office_api_location}/employee"
-        session[:token]     = output['access_token']
-
+        url = "#{api_link}/employee"
+        session[:token] = output['access_token']
+=begin
 				user_credentials = {Authorization: session[:token]}
 
 				output = RestClient::Request.execute( { :method => :post, :url => url,
@@ -23,7 +23,7 @@ class UserController < ApplicationController
         :headers => {:Authorization => session[:token]} } )
 
 			  session[:employee]  = JSON.parse(output)
-
+=end
         redirect_to '/' and return
       end
     end
