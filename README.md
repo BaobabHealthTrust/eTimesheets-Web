@@ -62,7 +62,7 @@ Now visit the application from your browser by navigating to
 
 
 We encourage you to contribute to eTimesheets-WEB! 
-Please check out the [Contributing to eTimesheets guide](https://github.com/BaobabHealthTrust/eTimesheets-Web) for guidelines about how to proceed.
+Please check out the [Contributing to eTimesheets guide](https://github.com/BaobabHealthTrust/eTimesheets-Web) for guidelines about how to proceed with contributing.
 
 ### For contributors and contributing stats follow the link below:
 
