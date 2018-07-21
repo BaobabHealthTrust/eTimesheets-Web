@@ -1,24 +1,51 @@
-# README
+[![Waffle.io - Issues in progress](https://badge.waffle.io/BaobabHealthTrust/eTimesheets-Web.png?label=in%20progress&title=In%20Progress)](http://waffle.io/BaobabHealthTrust/eTimesheets-Web)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# eTimesheet WEB
 
-Things you may want to cover:
+# DESCRIPTION
+This is an electronic Timesheet Management System  
 
-* Ruby version
+# TABLE OF CONTENTS
 
-* System dependencies
+# DEPENDENCIES (Recommended)
 
-* Configuration
+## Ruby
 
-* Database creation
+    version 2.50p0 +
 
-* Database initialization
+## Rails
 
-* How to run the test suite
+    versions 5.2.0 +
 
-* Services (job queues, cache servers, search engines, etc.)
+# SETTING UP
 
-* Deployment instructions
+## Clone the repository from github
 
-* ...
+### SSH:
+
+    git@github.com:BaobabHealthTrust/eTimesheets-Web.git
+
+### HTTPS:
+
+    https://github.com/BaobabHealthTrust/eTimesheets-Web.git
+
+# INSTALLATION
+
+### Install the gem and all dependent pakages using the following command:
+
+    bundle
+
+# USAGE
+
+# CONTRIBUTING
+
+### For contributors and contributing stats follow the link below:
+
+https://github.com/BaobabHealthTrust/eTimesheets-Web/graphs/contributors
+
+# CREDITS
+
+# LICENSE
+Read more on the license in the LICENSE file in the repos root
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
