@@ -14,11 +14,11 @@ class ApplicationController < ActionController::Base
   protected
 
   def check_logged_in
-    if session[:token].blank?
-      respond_to do |format|
-        format.html { redirect_to '/login' }
-      end
-    end
+    # if session[:token].blank?
+    #   respond_to do |format|
+    #     format.html { redirect_to '/login' }
+    #   end
+    # end
   end
 
 end
