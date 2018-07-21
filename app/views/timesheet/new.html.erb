@@ -16,26 +16,27 @@
         center: 'title',
         right: 'month,agendaWeek,agendaDay,listMonth'
       },
-      defaultDate: '2018-03-12',
+      defaultDate: "<%= Date.today.strftime(%'%Y-%m-%d')%>",
       navLinks: true, // can click day/week names to navigate views
       businessHours: true, // display business hours
       editable: true,
       events: [
         {
           title: 'Business Lunch',
-          start: '2018-03-03T13:00:00',
+          start: "<%= Date.today.strftime(%'%Y-%m-%dT08:00')%>",
           constraint: 'businessHours'
         },
         {
           title: 'Meeting',
-          start: '2018-03-13T11:00:00',
+          start: "<%= Date.today.strftime(%'%Y-%m-%dT08:00')%>",
           constraint: 'availableForMeeting', // defined below
           color: '#257e4a'
         },
         {
           title: 'Conference',
           start: '2018-03-18',
-          end: '2018-03-20'
+          start: "<%= Date.today.strftime(%'%Y-%m-%d')%>",
+          end: "<%= (Date.today + 17.day).strftime(%'%Y-%m-%d')%>",
         },
         {
           title: 'Party',
